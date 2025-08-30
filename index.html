@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<!--
+-->
+<html>
+    <head>
+        <title>WolvSec</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/fullcalendar/main.css" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var calendarEl = document.getElementById("calendar");
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: "dayGridMonth",
+                    contentHeight: "auto",
+                    googleCalendarApiKey: "AIzaSyBtYVojFaONJ3fRVD3DWybM4TvQx5iX9DU",
+                    events: {
+                        googleCalendarId: "c_0rnb90cbf09chm9hnsa6oncjrc@group.calendar.google.com"
+                    }
+                });
+                calendar.render();
+            });
+        </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body class="is-preload">
+
+        <!-- Sidebar -->
+            <section id="sidebar">
+                <div class="inner">
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">Welcome</a></li>
+                            <li><a href="#one">What we do</a></li>
+                            <li><a href="#two">Who we are</a></li>
+                            <li><a href="#three">Upcoming events</a></li>
+                            <li><a href="#four">Resources</a></li>
+                            <li><a href="#five">Sponsors</a></li>
+                            <li><a href="#six">Get in touch</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Intro -->
+                    <section id="intro" class="wrapper style1 fullscreen fade-up">
+                        <div class="inner">
+                            <h1>Welcome</h1>
+                            <p>WolvSec is a computer security club and CTF team at the University of Michigan. We host
+                            weekly meetings and events where we discuss current topics and teach skills related to
+                            cybersecurity. We also compete in competitions and work on various security projects. The
+                            club is composed of students, alumni, staff, and local professionals who are all focused on
+                            creating a friendly and collaborative learning environment for cybersecurity.</p>
+                            <ul class="actions">
+                                <li><a href="#one" class="button scrolly">Learn more</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                <!-- One -->
+                    <section id="one" class="wrapper style2 fade-up">
+                        <div class="inner">
+                            <h2>What we do</h2>
+                            <p>As a club, we aim to expand our knowledge and skills in cybersecurity. We accomplish this
+                            in a few ways: hosting guest presenters, who talk about research or industry practices;
+                            competing in cybersecurity CTFs, in which we test and expand our skills through practical
+                            applications; creating projects, to further expand our capabilities. Below is a list of some
+                            of the areas of security we are interested in.</p>
+                            <div class="features">
+                                <section>
+                                    <span class="icon solid major fa-cog"></span>
+                                    <h3>Reverse Engineering</h3>
+                                    <p>Understanding the functionality of a given piece of software or hardware such
+                                    that you can identify deeper issues.</p>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-bug"></span>
+                                    <h3>Binary Exploitation</h3>
+                                    <p>Taking advantage of bugs or flaws in software to leak information or take control.</p>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-lock"></span>
+                                    <h3>Cryptography</h3>
+                                    <p>The practice and study of techniques for secure communication in the presence of
+                                    adversarial behavior.</p>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-desktop"></span>
+                                    <h3>Web Exploitation</h3>
+                                    <p>Attacking protocols, software, and infrastructure related to the world wide web.</p>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-fingerprint"></span>
+                                    <h3>Forensics</h3>
+                                    <p>The application of investigation and analysis techniques to gather and preserve
+                                    evidence from a particular computing system.</p>
+                                </section>
+                                <section>
+                                    <span class="icon solid major fa-bomb"></span>
+                                    <h3>Miscellaneous</h3>
+                                    <p>Cybersecurity is a very broad field that encompasses many fields. From social
+                                    engineering to autonomous vehicles, almost everything needs to be designed with
+                                    security in mind.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+                <!-- Two -->
+                    <section id="two" class="wrapper style3 spotlights">
+                        <section>
+                            <a href="#" class="image"><img src="images/tim-gouw-1K9T5YiZ2WU-unsplash.jpg" alt="" data-position="left center" /></a>
+                            <div class="content">
+                                <div class="inner">
+                                    <h2>University Community</h2>
+                                    <p>Although we are a student organization, our members come from the broad
+                                    University of Michigan community and local Ann Arbor residents. Our members include
+                                    students, staff, faculty, alumni, and local professionals. From complete novices to
+                                    industry experts, we all share a desire to expand our knowledge and skills in
+                                    cybersecurity.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                <!-- Three -->
+                    <section id="three" class="wrapper style1 fade-up">
+                        <div class="inner">
+                            <div id="calendar" class="style1">
+                            </div>
+                        </div>
+                    </section>
+
+                <!-- Four -->
+                    <section id="four" class="wrapper style2 fade-up">
+                        <div class="inner">
+                            <h2>Resources</h2>
+                            <p>Coming soon!</p>
+                        </div>
+                    </section>
+
+                <!-- Five -->
+                    <section id="five" class="wrapper style3 fade-up">
+                        <div class="inner">
+                            <h2>Current Sponsors</h2>
+                            <span class="image fit"><a href="https://www.cc-sw.com/"><img src="images/ccsw_logo.png" alt=""/></a></span>
+                            <p>Sponsorship is a great way to support our mission and reach out to our members. Through
+                            sponsorship, your organization can help organize outreach events, give workshops, and more.
+                            If you are interested in sponsoring us, please get contact us
+                            <a href="#six" class="scrolly">below</a>.</p>
+                        </div>
+                    </section>
+
+                <!-- Six -->
+                    <section id="six" class="wrapper style1 fade-up">
+                        <div class="inner">
+                            <h2>Get in touch</h2>
+                            <p>The best way to get ahold of us or get involved is to join our
+                            <a href="https://discord.gg/JND8QNRbSY">Discord</a>. You can also email us at the address
+                            below (encoded to prevent spam) or fill out the contact form. We strive to respond to all
+                            inquiries promptly.</p>
+                            <div class="split style1">
+                                <section>
+                                    <form method="POST" action="https://formspree.io/f/xwkaqpow">
+                                        <div class="fields">
+                                            <div class="field half">
+                                                <label for="name">Name</label>
+                                                <input type="text" name="name" id="name" />
+                                            </div>
+                                            <div class="field half">
+                                                <label for="email">Email</label>
+                                                <input type="text" name="email" id="email" />
+                                            </div>
+                                            <div class="field">
+                                                <label for="message">Message</label>
+                                                <textarea name="message" id="message" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <ul class="actions">
+                                            <li><a href="" class="button submit">Send Message</a></li>
+                                        </ul>
+                                    </form>
+                                </section>
+                                <section>
+                                    <ul class="contact">
+                                        <li>
+                                            <h3>Email</h3>
+                                            <a href="mailto:jbyifrp-nqzva@hzvpu.rqh%20(ROT13)">jbyifrp-nqzva@hzvpu.rqh (Decode with ROT13)</a>
+                                        </li>
+                                        <li>
+                                            <h3>Social</h3>
+                                            <ul class="icons">
+                                                <li><a href="https://discord.gg/JND8QNRbSY" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+                                                <li><a href="https://twitter.com/WolvSec" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                                <li><a href="https://github.com/WolvSec" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer" class="wrapper style1-alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Wolvsec. All rights reserved.</li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/fullcalendar/main.min.js"></script>
+
+    </body>
+</html>
