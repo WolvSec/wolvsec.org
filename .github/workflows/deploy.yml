@@ -1,0 +1,31 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.DESTINATION_KNOWN_HOSTS }}" \
+            > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy with rsync
+        run: |
+          rsync -avz --delete \
+            --exclude='.git/' \
+            --exclude='README.md' \
+            -e "ssh -p ${{ secrets.DESTINATION_PORT }}" \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.DESTINATION_HOST }}:${{ secrets.DESTINATION_FOLDER }}
